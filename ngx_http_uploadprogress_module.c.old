@@ -799,6 +799,7 @@ ngx_http_reportuploads_handler(ngx_http_request_t * r)
     expires->value.len = len - 1;
 
     //ccp = r->headers_out.cache_control.elts;
+    cc = r->headers_out.cache_control;
     if (cc == NULL) {
 
         /*if (ngx_array_init(&r->headers_out.cache_control, r->pool,
